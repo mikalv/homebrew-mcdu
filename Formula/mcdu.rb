@@ -7,20 +7,20 @@ class Mcdu < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mikalv/mcdu/releases/download/v#{version}/mcdu-macos-aarch64.tar.gz"
-      sha256 "2b057d53df8b51c581ef3d75c73a98017765920b9a7a4a6cb16a7b83e66c479d"
+      sha256 "67b51ef435d94f2a9430d8aa5feadc21329604b2680829ce4a153f97ac2ce94e"
     else
       url "https://github.com/mikalv/mcdu/releases/download/v#{version}/mcdu-macos-x86_64.tar.gz"
-      sha256 "f931224f1545dd13a1f23131cc002235c50d6748a54388a6dbff7d9beda7e0d4"
+      sha256 "60a8bf0f6ba77fcc9764cfe4aee8291bc2562bb7040c4d80a7a4d325279fbdf8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mikalv/mcdu/releases/download/v#{version}/mcdu-linux-aarch64-musl.tar.gz"
-      sha256 "78124fdd7d0062beb86c36ae67f544d2cb8fe6ac988c1d02f1e635a789268338"
+      sha256 "9cb25918df98b0aa209c7e1ea76e8407c33d9cee521a654a164a1603b4b654f3"
     else
       url "https://github.com/mikalv/mcdu/releases/download/v#{version}/mcdu-linux-x86_64-musl.tar.gz"
-      sha256 "703273dbf5e726a5ea701a8094d6e6a488691e3642ff6757fb72fc9beb71c3e1"
+      sha256 "e1a3d1b0569aa80bbb4e920f1e4cd66cb4eb20bc7124b749efdf93cddfd7975c"
     end
   end
 
